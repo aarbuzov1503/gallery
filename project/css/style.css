@@ -930,24 +930,24 @@ a {
   margin-right: 20px;
 }
 
-.social-item__icon {
+.social__item-icon {
   fill: var(--grey-color);
   cursor: pointer;
 }
 
-.social-item__icon:hover {
+.social__item-icon:hover {
   fill: var(--white-color);
 }
 
-.social-item__icon:active {
+.social__item-icon:active {
   fill: var(--purple-color);
 }
 
-.social__item-link.focus-visible .social-item__icon {
+.social__item-link.focus-visible .social__item-icon {
   fill: var(--white-color);
 }
 
-.social-item__icon {
+.social__item-icon {
   -webkit-transition: fill .3s ease-in-out;
   -o-transition: fill .3s ease-in-out;
   transition: fill .3s ease-in-out;
