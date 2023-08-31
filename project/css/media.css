@@ -8,7 +8,6 @@
 @media screen and (max-width: 1450px) {
 
   .container {
-    padding: 0px 100px;
     margin-bottom: 40px;
   }
 
@@ -17,19 +16,16 @@
   }
 
   .header-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 0px;
   }
 
-  .header__search {
-    right: 100px;
-  }
-
-  .header__logo {
-    margin-bottom: 25px;
+  .header__logo-link {
+    margin: 0;
   }
 
   .header__list {
@@ -38,6 +34,13 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .header__nav {
+    padding-top: 10px;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
 
   .catalog__item {
@@ -163,20 +166,25 @@
     margin-bottom: 0px;
   }
 
+  .header {
+    padding-bottom: 27px;
+  }
+
   .header__logo {
     width: 188px;
   }
 
-  .header__search {
-    width: 29px;
-    right: 50px;
+  .header__nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
+    margin-left: 0px;
     margin-right: 0px;
   }
 
-  .header__nav {
-    width: 101%;
-    margin-left: 0px;
-    margin-right: 0px;
+  .header__link {
+    padding-left: 3px;
+    padding-right: 8px;
   }
 
   .section__title,
@@ -189,7 +197,7 @@
   }
 
   .hero {
-    background-image: url("/img/jpg/birmingham1024.jpg");
+    background-image: url("../img/jpg/birmingham1024.jpg");
     background-size: 100% 100%;
   }
 
@@ -218,19 +226,23 @@
   }
 
   .events__items {
-    gap: 25px;
+    gap: 28px;
     --gap: 25px;
   }
 
   .events__card {
-    height: 425px;
+    height: 470px;
   }
 
   .events__subtitle {
     display: block;
     text-align: end;
-    padding-right: 15px;
+    padding-right: 13px;
     margin-bottom: 5px;
+  }
+
+  .events__pict {
+    margin-bottom: 13px;
   }
 
   .events__linc {
@@ -245,13 +257,14 @@
     margin-top: 4px;
   }
 
+  .projects {
+    padding-bottom: 76px;
+  }
+
   .projects__descr {
     margin-bottom: 23px;
   }
 
-  .projects__item-linc {
-    padding-bottom: 78px;
-  }
 
   .projects__item:not(:last-child) {
     margin-right: 26px;
@@ -270,7 +283,7 @@
   }
 
   .contacts__form {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
 
   .contacts__form-item:not(:last-child) {
@@ -278,31 +291,30 @@
   }
 
   .contacts__btn {
-    width: 299px;
+    width: 346px;
   }
 
   .contacts__social {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 
+  .contacts__form-item {
+    padding: 11px 24px;
+  }
 }
 
 @media screen and (max-width: 860px) {
-  .container {
-    padding: 0px 50px;
-  }
-
-  .header__search {
-    top: 2px;
-    right: 51px;
-  }
 
   .header__link {
     padding: 0 9px 2px 3px;
   }
 
+  .header__list {
+    gap: 30px;
+  }
+
   .hero {
-    background-image: url("/img/jpg/birmingham768.jpg");
+    background-image: url("../img/jpg/birmingham768.jpg");
   }
 
   .hero__title {
@@ -366,15 +378,12 @@
 
   .events__pict {
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .events__item {
     width: 100%;
     max-width: 800px;
-  }
-
-  .events__img {
-    width: 800px;
   }
 
   .events__linc {
@@ -388,7 +397,7 @@
   .events__card {
     max-width: 716px;
     min-height: 270px;
-    height: 271px;
+    height: 314px;
     padding-left: 32px;
   }
 
@@ -402,7 +411,7 @@
   }
 
   .events__subtitle {
-    padding-right: 16px;
+    padding-right: 14px;
   }
 
   .projects__descr {
@@ -413,8 +422,8 @@
     margin-bottom: 28px;
   }
 
-  .projects__items {
-    margin-bottom: 76px;
+  .projects__title {
+    line-height: 66.37px;
   }
 
   .projects__item:not(:last-child) {
@@ -457,12 +466,12 @@
   }
 
   .contacts__form-item:not(:last-child) {
-    width: calc(100% / 2 - 54px);
+    width: calc(100% / 2 - 10px);
     margin-right: 0px;
   }
 
   .contacts__btn {
-    width: 270px;
+    width: 315px;
     padding: 13px 21px;
   }
 
@@ -475,11 +484,6 @@
 @media screen and (max-width: 640px) {
   .container {
     padding: 0px 30px;
-  }
-
-  .header__search {
-    height: 43px;
-    top: 0;
   }
 
   .header__link {
@@ -509,7 +513,7 @@
   }
 
   .hero__btn {
-    width: 163px;
+    width: 205px;
     margin-bottom: 50px;
     font-size: 12px;
     padding: 7px 20px;
@@ -585,10 +589,6 @@
     gap: 0px;
   }
 
-  .projects__items {
-    margin-bottom: 30px;
-  }
-
   .catalog {
     padding: 39px 0;
   }
@@ -643,7 +643,7 @@
   }
 
   .contacts__btn {
-    width: 228px;
+    width: 235px;
     font-size: 12px;
     line-height: 16.34px;
   }
@@ -668,18 +668,23 @@
   }
 
   .header__nav {
+    padding: 0;
     width: 104%;
-    overflow-x: scroll;
-    overflow-y: hidden;
   }
 
   .header__list {
     width: 146%;
+    gap: 27px;
   }
 
   .header__logo {
     width: 97px;
+    height: 40px;
     margin-bottom: 0px;
+  }
+
+  .header__link {
+    padding: 0;
   }
 
   .header__search {
@@ -708,6 +713,16 @@
     width: 96%;
     font-size: 16px;
     line-height: 32px;
+  }
+
+
+  .hero__title {
+    padding-left: 22px;
+  }
+
+  .hero__descr {
+    width: 95%;
+    padding: 0 15px 0 27px;
   }
 
   .about__descr {
@@ -744,7 +759,7 @@
   }
 
   .hero {
-    background-image: url("/img/jpg/birmingham320.jpg");
+    background-image: url("../img/jpg/birmingham320.jpg");
   }
 
   .catalog__header {
@@ -771,7 +786,7 @@
 
   .events__card {
     max-width: 300px;
-    height: 424px;
+    height: 465px;
     padding-left: 22px;
     padding-right: 2px;
   }
@@ -814,8 +829,12 @@
     flex-direction: column;
   }
 
-  .projects__item {
+  .projects__item:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  .projects {
+    padding-bottom: 38px;
   }
 
   .projects__item:not(:last-child) {
@@ -841,7 +860,7 @@
   }
 
   .contacts__social {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     margin-top: 8px;
   }
 
@@ -852,7 +871,7 @@
   }
 
   .contacts__form-item:not(:last-child) {
-    width: 79%;
+    width: 100%;
   }
 
   .social__item-vk,
@@ -874,8 +893,8 @@
   }
 
   .contacts__btn {
-    width: 64px;
-    height: 16px;
+    width: 128px;
+    height: 41px;
     margin-bottom: 10px;
     font-size: 0px;
   }
@@ -891,7 +910,7 @@
   }
 
   .footer {
-    padding: 19.5px 0;
+    padding: 18px 0;
   }
 
   .footer__logo {

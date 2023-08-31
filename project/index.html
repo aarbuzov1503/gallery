@@ -11,13 +11,13 @@
     <link rel="shortcut icon" type="image/svg" href="img/svg/Blanchard.svg">
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header" aria-label="Секция заголовок">
       <div class="container header-container">
-        <a class="header__logo" href="#"><img class="header__logo"
+        <a class="header__logo-link" href="#"><img class="header__logo"
             src="img/svg/Logo.svg"
             alt="Логотип художественной галереи Blanchard"></a>
         <nav class="header__nav">
-          <ul class="header__list list-reset">
+          <ul class="header__list list-reset" aria-label="Навигация">
             <li class="header__item"><a class="header__link" href="#about">О&nbsp;нас</a></li>
             <li class="header__item"><a class="header__link" href="#gallery">Галерея</a></li>
             <li class="header__item"><a class="header__link" href="#catalog">Каталог</a></li>
@@ -26,9 +26,7 @@
             <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <form class="header__search"
-          action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <button class="header__btn btn-reset">
+          <button class="header__search btn-reset" aria-label="Кнопка поиска">
             <svg class="header__search-pict" width="28" height="28"
               viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect class="header__search-rect" width="8.79564" height="2.19891"
@@ -39,29 +37,28 @@
                 d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
                 fill="white"></path>
             </svg></button>
-        </form>
       </div>
     </header>
-    <main class="main">
+    <main class="main" aria-label="Основная часть сайта">
       <h1 class="visually-hidden">Картинная галерея Blanchard</h1>
-      <section class="hero" id="hero">
+      <section class="hero" id="hero" aria-label="Секция главного экрана">
         <div class="container">
           <div class="hero__content">
             <h2 class="hero__title">
-              Прикоснитесь к прекрасному
+              Прикоснитесь к&nbsp;прекрасному
             </h2>
             <p class="hero__descr">
               Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация
               намеченных плановых заданий создаёт предпосылки для новых
               предложений
             </p>
-            <button class="hero__btn btn-reset">
+            <button class="hero__btn btn-reset" aria-label="Кнопка подписаться на рассылку">
               Подписаться на&nbsp;рассылку
             </button>
           </div>
         </div>
       </section>
-      <section class="about" id="about">
+      <section class="about" id="about" aria-label="Секция о нас">
         <div class="container">
           <h2 class="about__title">
             О&nbsp;нас
@@ -83,7 +80,7 @@
           </p>
         </div>
       </section>
-      <section class="gallery" id="gallery">
+      <section class="gallery" id="gallery" aria-label="Секция галерея">
         <div class="container">
           <h2 class="gallery__title">
             Галерея
@@ -110,24 +107,24 @@
                 </div>
               </div>
             </div>
-            <div class="gallery__part">
-              <div class="gallery__item">
+            <ul class="gallery__part list-reset">
+              <li class="gallery__item">
                 <img class="gallery__img" src="img/jpg/1art.jpg"
                   alt="презентативная репродукция картины">
-              </div>
-              <div class="gallery__item">
+              </li>
+              <li class="gallery__item">
                 <img class="gallery__img" src="img/jpg/2art.jpg"
                   alt="презентативная репродукция картины">
-              </div>
-              <div class="gallery__item">
+              </li>
+              <li class="gallery__item">
                 <img class="gallery__img" src="img/jpg/3art.jpg"
                   alt="презентативная репродукция картины">
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section id="catalog" class="catalog">
+      <section id="catalog" class="catalog" aria-label="Секция каталог">
         <div class="container">
           <h2 class="catalog__title">
             Каталог
@@ -208,7 +205,7 @@
           </ul>
         </div>
       </section>
-      <section id="events" class="events">
+      <section id="events" class="events" aria-label="Секция события">
         <div class="container">
           <h2 class="events__title">
             События
@@ -216,7 +213,7 @@
           <ul class="events__items list-reset">
             <li class="events__item">
               <picture class="events__pict">
-                <source srcset="img/jpg/arm1200.jpg" media="(max-width: 450px)">
+                <source srcset="img/jpg/arm1200.jpg" media="(max-width: 320px)">
                 <source srcset="img/jpg/arm768.jpg" media="(max-width: 860px)">
                 <source srcset="img/jpg/arm1200.jpg" media="(max-width: 1200px)">
                 <img class="events__img" src="img/jpg/arm.jpg"
@@ -237,12 +234,12 @@
                     брат Давид и&nbsp;сын Ридольфо
                   </p>
                 </div>
-                <a class="events__linc" href="#">Подробнее</a>
+                <a class="events__linc" href="#" aria-label="Ссылка подробнее">Подробнее</a>
               </div>
             </li>
             <li class="events__item">
               <picture class="events__pict">
-                <source srcset="img/jpg/mans1200.jpg" media="(max-width: 450px)">
+                <source srcset="img/jpg/mans1200.jpg" media="(max-width: 320px)">
                 <source srcset="img/jpg/mans768.jpg" media="(max-width: 860px)">
                 <source srcset="img/jpg/mans1200.jpg"
                   media="(max-width: 1200px)">
@@ -262,12 +259,12 @@
                     является чётким доказательством простого факта
                   </p>
                 </div>
-                <a href="#" class="events__linc">Подробнее</a>
+                <a href="#" class="events__linc" aria-label="Ссылка подробнее">Подробнее</a>
               </div>
             </li>
             <li class="events__item">
               <picture class="events__pict">
-                <source srcset="img/jpg/hall1200.jpg" media="(max-width: 450px)">
+                <source srcset="img/jpg/hall1200.jpg" media="(max-width: 320px)">
                 <source srcset="img/jpg/hall768.jpg" media="(max-width: 860px)">
                 <source srcset="img/jpg/hall1200.jpg"
                   media="(max-width: 1200px)">
@@ -289,13 +286,13 @@
                     в&nbsp;формировании глубокомысленных рассуждений
                   </p>
                 </div>
-                <a class="events__linc" href="#">Подробнее</a>
+                <a class="events__linc" href="#" aria-label="Ссылка подробнее">Подробнее</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" aria-label="Секция проекты">
         <div class="container">
           <h2 class="projects__title">
             Проекты
@@ -321,7 +318,7 @@
           <h3 class="projects__subtitle">
             Партнёры проектов:
           </h3>
-          <ul class="projects__items list-reset">
+          <ul class="projects__items list-reset" aria-label="Логотипы партнёров">
             <li class="projects__item">
               <a class="projects__item-linc" href="#">
                 <picture>
@@ -345,7 +342,7 @@
           </ul>
         </div>
       </section>
-      <section class="contacts" id="contacts">
+      <section class="contacts" id="contacts" aria-label="Секция контакты">
         <div class="container contacts__container">
           <div class="contacts__part">
             <div class="contacts__descr">
@@ -360,7 +357,7 @@
               <input class="contacts__name contacts__form-item" name="name" type="text" placeholder="Имя*" required value>
               <input class="contacts__phone contacts__form-item" name="phone" type="tel" placeholder="Телефон*" required value>
               <button type="submit"
-                class="contacts__btn btn-reset contacts__form-item">Заказать
+                class="contacts__btn btn-reset contacts__form-item" aria-label="Заказать обратный звонок">Заказать
                 обратный звонок</button>
             </form>
             <div class="contacts__social">
